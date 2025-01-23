@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "youtubeclone"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "youtubeclone-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
